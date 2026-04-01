@@ -11,6 +11,7 @@ public class MedicoController {
     //POST
     @PostMapping // SPRING WEB - Informa que o método abaixo é do tipo POST (Cadastrar)
     public void cadastrar(String dados){
+
         System.out.println(dados);
     }
     

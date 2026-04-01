@@ -1,5 +1,6 @@
 package br.com.vollmed.api.model.medico;
 
+import br.com.vollmed.api.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,5 +19,8 @@ public class Medico {
     private String telefone;
     private String crm;
     private Especialidade especialidade;
+    private Endereco endereco;
+    private int status;
 }
+
 

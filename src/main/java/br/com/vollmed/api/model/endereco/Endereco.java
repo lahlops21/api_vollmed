@@ -7,7 +7,7 @@ public class Endereco {
     private String complemento;
     private String bairro;
     private String cidade;
-    private String uf;
+    private Uf uf;
     private String cep;
 
 }
