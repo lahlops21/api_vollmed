@@ -1,6 +1,5 @@
 package br.com.vollmed.api.model.medico;
 
-import br.com.vollmed.api.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,17 +9,22 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(of = "id")
 public class Medico {
     
     // atributos -> caracteríticas -> variáveis 
+    @Id // SPRING JPA - Informa ao banco de dados que a pk é o id. 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id; 
     private String nome;
     private String email;
     private String telefone;
     private String crm;
+    
+    @Enumerated(EnumType.STRING)
     private Especialidade especialidade;
-    private Endereco endereco;
-    private int status;
+    // private Endereco endereco;
+    // private int status;
 }
 
 

@@ -1,7 +1,5 @@
 package br.com.vollmed.api.model.Consulta;
 
-import br.com.vollmed.api.model.endereco.Endereco;
-import br.com.vollmed.api.model.medico.Especialidade;
 import br.com.vollmed.api.model.medico.Medico;
 import br.com.vollmed.api.model.paciente.Paciente;
 import jakarta.persistence.*;
@@ -19,17 +17,16 @@ import java.time.LocalTime;
 @EqualsAndHashCode
 public class Consulta {
 
-
     private int id;
-    @ManyToOne
-    @JoinColumn(name = "medico_id")
+    // @ManyToOne
+    // @JoinColumn(name = "medico_id")
     private Medico medico;
-
-    @ManyToOne
-    @JoinColumn(name = "paciente_id")
+    // @ManyToOne
+    // @JoinColumn(name = "paciente_id")
     private Paciente paciente;
     private LocalDate data;
     private LocalTime hora;
     private StatusConsulta statusConsulta;
     int status;
 }
+
