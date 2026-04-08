@@ -1,13 +1,11 @@
 package br.com.vollmed.api.model.paciente;
 
-import br.com.vollmed.api.model.endereco.Endereco;
 
 public record DadosCadastroPaciente(
-        String nomeCompleto,
+        String nome,
         String email,
         String telefone,
-        String cpf,
-        Endereco endereco
+        String cpf
 ) {
 
 

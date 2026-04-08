@@ -8,8 +8,9 @@ public record DadosCadastroMedico(
         String email,
         String telefone,
         String crm,
-        Especialidade especialidade,
-        Endereco endereco) {
+        Especialidade especialidade
+    
+    ) {
     // Essa classe é responsável por pegar os 
     // dados que estão vindo do simulador de requisição 
     // e transformar de JSON -> DTO <- em objeto para a API
