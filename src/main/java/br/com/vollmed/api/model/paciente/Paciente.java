@@ -1,6 +1,5 @@
 package br.com.vollmed.api.model.paciente;
 
-import br.com.vollmed.api.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,6 +1,5 @@
 package br.com.vollmed.api.model.medico;
 
-import br.com.vollmed.api.model.endereco.Endereco;
 
 public record DadosCadastroMedico(
 
