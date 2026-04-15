@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MedicoController {
     
     private final ApiApplication apiApplication;
+    
     @Autowired
     private MedicoRepository medicoRepository;
 
@@ -38,9 +39,14 @@ public class MedicoController {
     }
 
     @GetMapping
-    public List<DadosListagemMedico> listarMedicos() {
-        return 
+    public List<Medico> listar() {
+        return medicoRepository.findAll();
     }
+    
+    // @GetMapping
+    // public List<DadosListagemMedico> listarMedicos() {
+        
+    // }
     
 
 }
