@@ -1,5 +1,6 @@
 package br.com.vollmed.api.model.medico;
 
+import br.com.vollmed.api.model.endereco.DadosCadastroEndereco;
 
 public record DadosCadastroMedico(
 
@@ -7,7 +8,8 @@ public record DadosCadastroMedico(
         String email,
         String telefone,
         String crm,
-        Especialidade especialidade
+        Especialidade especialidade,
+        DadosCadastroEndereco endereco
     
     ) {
     // Essa classe é responsável por pegar os 

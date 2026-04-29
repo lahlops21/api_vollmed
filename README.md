@@ -32,6 +32,11 @@
 `@Autowired`
 => É utilizado quando você está aplicando a injeção de dependência. Ou seja, o Spring Boot sabe o que a classe (interface) possui de métodos e atributos. 
 
+2. 
+
+
+
+
 ## URL do banco de dados de teste 
 
 localhost:8080/h2-console

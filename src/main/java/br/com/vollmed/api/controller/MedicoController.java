@@ -38,6 +38,7 @@ public class MedicoController {
 
     }
 
+    // Prática ruim, só para fins de teste
     @GetMapping
     public List<Medico> listar() {
         return medicoRepository.findAll();
