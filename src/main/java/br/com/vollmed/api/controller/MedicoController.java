@@ -11,8 +11,6 @@ import br.com.vollmed.api.model.medico.DadosListagemMedico;
 import br.com.vollmed.api.model.medico.Medico;
 import br.com.vollmed.api.model.medico.MedicoRepository;
 import jakarta.transaction.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 
@@ -39,15 +37,25 @@ public class MedicoController {
     }
 
     // Prática ruim, só para fins de teste
-    @GetMapping
-    public List<Medico> listar() {
+    // Get que devolve todas as informações de todos os medicos
+    @GetMapping("Todos")
+    public List<Medico> listarTodos() {
         return medicoRepository.findAll();
     }
     
-    // @GetMapping
-    // public List<DadosListagemMedico> listarMedicos() {
-        
+    // @GetMapping("listar")
+    // public List<DadosListagemMedico> listarRegraNegocio() {
+    //     return medicoRepository.findAll();
+
+        // findAll() -> Método que retorna uma lista de objetos do tipo DadosListagemMedico
+        // strem() -> Método utilizado para tranformar uma lista em um fluxo de dados permitindo aplicar operações de transformação
+        // map() -> Método utilizado para conveter cada objeto do tipo médico em um json DadosLisagemMedico utilizando o construtor que criamos 
+        // em DadosLisagemMedico. 
+        // toList() -> Método utilizado para coletar os resultados em uma nova Lista do tipo DadosListagemMedico que é formato que queremos retornar para nossa API
+        // DadosListagemMedico::new -> O construtor (método de referência) que está no record DadosListagemMedico. 
     // }
+    
+    
     
 
 }

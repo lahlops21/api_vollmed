@@ -32,8 +32,15 @@
 `@Autowired`
 => É utilizado quando você está aplicando a injeção de dependência. Ou seja, o Spring Boot sabe o que a classe (interface) possui de métodos e atributos. 
 
-2. 
+2. Anotações do Spring DATA
+`@Enumerated`
+=> Informa que aquele atributo é uma clase do tipo enum
 
+`@Embedded`
+=> Anta que uma classe faz parte dessa tabela no banco de dados. Ou seja, é utilizada na classe pai que irá associar uma tabela auxiliar nela.
+
+`@Embeddable`
+=> Anota que essa clsse irá fazer parte de uma tabela de outra classe. Ou seja, será utilizada na classe da tabela auxiliar. 
 
 
 
